@@ -1,0 +1,7197 @@
+{
+	"info": {
+		"_postman_id": "9be8c1be-fc3d-4ff9-8d92-9501f22d16a0",
+		"name": "Udemy - Spring Kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Inventory - Window Simulation",
+			"item": [
+				{
+					"name": "Inventory Simulation 01",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "6e15f9ea-c81f-4016-85d9-cc3a601c0244",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 50,\r\n\t\"transactionTime\" : \"2020-12-31 08:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 02",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "91d31157-26ec-4c0c-b282-4e20e2d2375b",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 15,\r\n\t\"transactionTime\" : \"2020-12-31 08:10:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 03",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "90a9c490-4d9c-478e-8b7e-e86043e37a14",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 8,\r\n\t\"transactionTime\" : \"2020-12-31 08:20:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/subtract",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"subtract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 04",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d993080f-77ac-49e2-8a6f-4abc3e786659",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 7,\r\n\t\"transactionTime\" : \"2020-12-31 08:30:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 05",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "3da02fdb-d839-4268-b032-6cc03db75837",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 12,\r\n\t\"transactionTime\" : \"2020-12-31 08:40:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/subtract",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"subtract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 06",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4d71590b-de3a-4841-8456-48a4293f2503",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 11,\r\n\t\"transactionTime\" : \"2020-12-31 08:50:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 07",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "1d72b99f-a71f-409e-aab1-9c8d9bdb93b5",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 9,\r\n\t\"transactionTime\" : \"2020-12-31 09:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 08",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "48a79607-c976-4d3e-9b2c-a4f027bbabb5",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 4,\r\n\t\"transactionTime\" : \"2020-12-31 09:10:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 09",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "071fe6d9-9829-4c34-92b7-1a5abb3e2cdf",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 6,\r\n\t\"transactionTime\" : \"2020-12-31 09:20:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/subtract",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"subtract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 10",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "29584815-88fc-4c56-a6a2-ea54b6f13bb3",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 3,\r\n\t\"transactionTime\" : \"2020-12-31 09:30:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/subtract",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"subtract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 11",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "a840a103-7f5c-400b-8f55-1ebfc0a74038",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 10,\r\n\t\"transactionTime\" : \"2020-12-31 09:40:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 12",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "2bf762ab-c15f-430c-9c9f-299731a4c37c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 6,\r\n\t\"transactionTime\" : \"2020-12-31 09:50:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/subtract",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"subtract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 13",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4e981316-2b64-4028-9247-1dba25a746dd",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 3,\r\n\t\"transactionTime\" : \"2020-12-31 10:00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 14",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5d0df360-6cd8-4cbb-ad46-a22163c216a8",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 4,\r\n\t\"transactionTime\" : \"2020-12-31 10:10:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/subtract",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"subtract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inventory Simulation 15",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "1df6fdc1-fea4-4200-b530-e950298ef2fe",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"location\" : \"Indonesia\",\r\n\t\"item\": \"{{inventorySimulationItem}}\",\r\n\t\"quantity\": 17,\r\n\t\"transactionTime\" : \"2020-12-31 10:20:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/inventory/subtract",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"inventory",
+								"subtract"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Online Order/Payment- Inner Join Simulation",
+			"item": [
+				{
+					"name": "Online Order A",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5f9be126-e444-49b0-b397-ba361097e306",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"A1\",\n\t\"orderDateTime\" : \"2020-12-31 06:05:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment X",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e7874546-e3c9-425a-a22e-1daab233d0fb",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"X1\",\n\t\"paymentDateTime\" : \"2020-12-31 06:05:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order B",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "1e5f81b4-eb2f-487d-84a6-32a798fa94fb",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"B1\",\n\t\"orderDateTime\" : \"2020-12-31 06:10:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment A",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "586c325e-918c-41a6-8c19-64dcf73e93bb",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"A1\",\n\t\"paymentDateTime\" : \"2020-12-31 06:15:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order C",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "56f1cac8-c76b-463a-b981-ac26bb55a02d",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"C1\",\n\t\"orderDateTime\" : \"2020-12-31 06:25:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment B",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e0cb0285-329f-4953-ad65-15a8a1cf8541",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"B1\",\n\t\"paymentDateTime\" : \"2020-12-31 06:25:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment D",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d876ad31-7193-483f-81cd-93d28406b697",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"D1\",\n\t\"paymentDateTime\" : \"2020-12-31 06:35:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order D",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4f804194-8bee-4a63-991d-ba6963961524",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"D1\",\n\t\"orderDateTime\" : \"2020-12-31 06:40:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment F",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b821e69a-095b-4055-ac3a-9dcf2f3f4d5a",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"F1\",\n\t\"paymentDateTime\" : \"2020-12-31 06:45:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order E",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "0a76a19a-2232-4b33-b773-8c61b595498d",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"E1\",\n\t\"orderDateTime\" : \"2020-12-31 06:50:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment C",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e5917a26-4712-432c-a95b-9591b982cf1d",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"C1\",\n\t\"paymentDateTime\" : \"2020-12-31 06:50:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order F",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f81a9925-eee8-4723-8556-72d8a4983852",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"F1\",\n\t\"orderDateTime\" : \"2020-12-31 08:00:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment E",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d681246f-26c3-46a9-a891-862bc81015c0",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"E1\",\n\t\"paymentDateTime\" : \"2020-12-31 08:05:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Online Order/Payment- Left Join Simulation",
+			"item": [
+				{
+					"name": "Online Order A",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ce50c86c-0257-49e4-bc76-68ca87c014da",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"A2\",\n\t\"orderDateTime\" : \"2020-12-31 06:05:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment X",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "782b13fa-97b4-4cb8-8885-315218ef4d54",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"X2\",\n\t\"paymentDateTime\" : \"2020-12-31 06:05:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order B",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "619d8dd1-ea39-498d-98ab-84bc7fe89311",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"B2\",\n\t\"orderDateTime\" : \"2020-12-31 06:10:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment A",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "32ed89d7-634c-4852-a78e-d2424b98bd78",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"A2\",\n\t\"paymentDateTime\" : \"2020-12-31 06:15:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order C",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "6d8f2e1f-31ce-42e5-ae5e-2237c09eb461",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"C2\",\n\t\"orderDateTime\" : \"2020-12-31 06:25:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment B",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "47333f0d-1685-4d93-9fe6-e77582db898b",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"B2\",\n\t\"paymentDateTime\" : \"2020-12-31 06:25:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment D",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "985b53ce-e74c-4340-892f-af3c025415f3",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"D2\",\n\t\"paymentDateTime\" : \"2020-12-31 06:35:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order D",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "297ecbdc-7cba-4333-ba8f-6a520f5f6d86",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"D2\",\n\t\"orderDateTime\" : \"2020-12-31 06:40:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment F",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "cb4ad568-dca5-448f-aa73-06b696fe02bb",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"F2\",\n\t\"paymentDateTime\" : \"2020-12-31 06:45:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order E",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4d99058e-e368-41bb-851e-a0018e7e4ad7",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"E2\",\n\t\"orderDateTime\" : \"2020-12-31 06:50:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment C",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f7afa6c9-a854-43e8-b040-46666f52e00b",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"C2\",\n\t\"paymentDateTime\" : \"2020-12-31 06:50:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order F",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "8295305e-564f-4fd1-aca6-536ab2523766",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"F2\",\n\t\"orderDateTime\" : \"2020-12-31 08:00:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment E",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "8869bc44-69dd-4301-948f-0f3c902a5ce5",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"E2\",\n\t\"paymentDateTime\" : \"2020-12-31 08:05:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Online Order/Payment- Outer Join Simulation",
+			"item": [
+				{
+					"name": "Online Order A",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "0d8bbf99-f195-41f3-a851-9a643ad925b7",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"A3\",\n\t\"orderDateTime\" : \"2020-12-31 06:05:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment X",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "58f6d37b-fa3b-47e2-a757-c4887fe2dad0",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"X3\",\n\t\"paymentDateTime\" : \"2020-12-31 06:05:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order B",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "aa495188-c01f-4310-ac10-dd4a2e0d4e7d",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"B3\",\n\t\"orderDateTime\" : \"2020-12-31 06:10:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment A",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "225821d4-6c2f-46eb-b681-3e5ea9721110",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"A3\",\n\t\"paymentDateTime\" : \"2020-12-31 06:15:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order C",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "af216784-611b-4bc0-b649-1f307817f1be",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"C3\",\n\t\"orderDateTime\" : \"2020-12-31 06:25:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment B",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "8bc386a4-2050-4d71-85be-b369a7d26a7a",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"B3\",\n\t\"paymentDateTime\" : \"2020-12-31 06:25:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment D",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "7fbd6a71-deb3-4942-989e-5697248cba67",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"D3\",\n\t\"paymentDateTime\" : \"2020-12-31 06:35:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order D",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d2dbeb58-74e7-448c-9f3a-57e32378928d",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"D3\",\n\t\"orderDateTime\" : \"2020-12-31 06:40:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment F",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c906d934-ed1a-4458-9553-c1c0a4c44352",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"F3\",\n\t\"paymentDateTime\" : \"2020-12-31 06:45:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order E",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "2860f141-1545-4600-988f-17db052ae0ed",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"E3\",\n\t\"orderDateTime\" : \"2020-12-31 06:50:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment C",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "9ef0cb4a-c9f2-47c1-b73c-43ee912e6257",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"C3\",\n\t\"paymentDateTime\" : \"2020-12-31 06:50:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Order F",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d3752350-5d84-4316-8ae3-fd274b11c8d7",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"F3\",\n\t\"orderDateTime\" : \"2020-12-31 08:00:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/order/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"order",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Online Payment E",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d4d821a9-abda-4750-b16c-5d4390068e69",
+								"exec": [
+									"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+									"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"onlineOrderNumber\": \"E3\",\n\t\"paymentDateTime\" : \"2020-12-31 08:05:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/payment/online",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"payment",
+								"online"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Web Design Vote - Inner Join",
+			"item": [
+				{
+					"name": "Color Vote - Piglet 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "46705be7-bfb5-4821-a19e-e3e08b79e73f",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-A\",\n\t\"color\": \"pink-A\",\n\t\"voteDateTime\": \"2020-12-31 08:05:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Eeyore 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "6ce0d33e-48d1-4767-975a-05b884ff8445",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"eeyore-A\",\n\t\"color\": \"yellow-A\",\n\t\"voteDateTime\": \"2020-12-31 08:25:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Piglet 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e3a75c25-090f-4d7e-bfa9-c815dd7a846f",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-A\",\n\t\"layout\": \"vertical-A\",\n\t\"voteDateTime\": \"2020-12-31 08:40:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Pooh 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "68e4977a-6877-40eb-ae46-182f46481cd3",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"pooh-A\",\n\t\"color\": \"yellow-A\",\n\t\"voteDateTime\": \"2020-12-31 09:15:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Tigger 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e7d85b53-e3aa-4a4a-b362-00ee5a0d45ee",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-A\",\n\t\"layout\": \"vertical-A\",\n\t\"voteDateTime\": \"2020-12-31 09:30:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Piglet 2",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "a74a462f-2f5a-49b5-9b2c-9e0ba1835392",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-A\",\n\t\"layout\": \"horizontal-A\",\n\t\"voteDateTime\": \"2020-12-31 09:50:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Tigger 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "62c41354-c115-4588-ada6-54621b634a24",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-A\",\n\t\"color\": \"pink-A\",\n\t\"voteDateTime\": \"2020-12-31 10:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Pooh 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "a5ecdef4-86f1-467c-a1e4-1f88f936c6d8",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"pooh-A\",\n\t\"layout\": \"vertical-A\",\n\t\"voteDateTime\": \"2020-12-31 10:05:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Rabbit 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "8e2bd1e7-4cd6-452b-a156-d15640c2be27",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"rabbit-A\",\n\t\"layout\": \"horizontal-A\",\n\t\"voteDateTime\": \"2020-12-31 10:40:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Tigger 2",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "60e59756-6563-4a7c-b379-c8d4a5336db7",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-A\",\n\t\"color\": \"yellow-A\",\n\t\"voteDateTime\": \"2020-12-31 11:20:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Web Design Vote - Left Join",
+			"item": [
+				{
+					"name": "Color Vote - Piglet 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c5a1fa6c-ecde-4005-81c5-fbf15cb88ec6",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-B\",\n\t\"color\": \"pink-B\",\n\t\"voteDateTime\": \"2020-12-31 08:05:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Eeyore 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "9c06f20d-09a4-40cd-8e1e-f1b82dc3244d",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"eeyore-B\",\n\t\"color\": \"yellow-B\",\n\t\"voteDateTime\": \"2020-12-31 08:25:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Piglet 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "186e8e94-d9ef-441c-8649-4b944e975d74",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-B\",\n\t\"layout\": \"vertical-B\",\n\t\"voteDateTime\": \"2020-12-31 08:40:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Pooh 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "50321138-e06c-419b-9408-30f48a34ece6",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"pooh-B\",\n\t\"color\": \"yellow-B\",\n\t\"voteDateTime\": \"2020-12-31 09:15:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Tigger 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "0f853069-e537-43e0-ba2e-7f73cc3b793d",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-B\",\n\t\"layout\": \"vertical-B\",\n\t\"voteDateTime\": \"2020-12-31 09:30:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Piglet 2",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d43d853c-2e77-423a-a0bf-be29d86f4c3d",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-B\",\n\t\"layout\": \"horizontal-B\",\n\t\"voteDateTime\": \"2020-12-31 09:50:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Tigger 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "a46cf988-bc97-47f5-8d0c-eed56e85fc30",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-B\",\n\t\"color\": \"pink-B\",\n\t\"voteDateTime\": \"2020-12-31 10:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Pooh 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "1a33c120-3108-4b74-ad31-beb06626d201",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"pooh-B\",\n\t\"layout\": \"vertical-B\",\n\t\"voteDateTime\": \"2020-12-31 10:05:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Rabbit 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "eee97599-e2a4-4ebc-a02e-24f2ab9f3734",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"rabbit-B\",\n\t\"layout\": \"horizontal-B\",\n\t\"voteDateTime\": \"2020-12-31 10:40:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Tigger 2",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "cb41bd30-a00e-4d34-8115-b8a2401fc3db",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-B\",\n\t\"color\": \"yellow-B\",\n\t\"voteDateTime\": \"2020-12-31 11:20:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Web Design Vote - Outer Join",
+			"item": [
+				{
+					"name": "Color Vote - Piglet 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "84bd7bc1-d468-4cbf-bc77-507ccc34066c",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-C\",\n\t\"color\": \"pink-C\",\n\t\"voteDateTime\": \"2020-12-31 08:05:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Eeyore 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "238e3e5c-f29b-4656-9d87-de0796df6cf5",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"eeyore-C\",\n\t\"color\": \"yellow-C\",\n\t\"voteDateTime\": \"2020-12-31 08:25:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Piglet 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "0cbb4048-afaa-450d-b093-1d993e6ec176",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-C\",\n\t\"layout\": \"vertical-C\",\n\t\"voteDateTime\": \"2020-12-31 08:40:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Pooh 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4e077030-fed4-496b-8e19-834fe78a9a4f",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"pooh-C\",\n\t\"color\": \"yellow-C\",\n\t\"voteDateTime\": \"2020-12-31 09:15:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Tigger 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4ea0782f-2109-45c5-a42b-4300f9b21ac4",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-C\",\n\t\"layout\": \"vertical-C\",\n\t\"voteDateTime\": \"2020-12-31 09:30:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Piglet 2",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b651a6fc-7419-4078-bcde-41708263e7be",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-C\",\n\t\"layout\": \"horizontal-C\",\n\t\"voteDateTime\": \"2020-12-31 09:50:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Tigger 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "958c64e0-ed6d-4b70-8b00-93ca80783196",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-C\",\n\t\"color\": \"pink-C\",\n\t\"voteDateTime\": \"2020-12-31 10:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Pooh 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "0fce699c-d9ea-4da4-86eb-ca4bd1fe7be6",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"pooh-C\",\n\t\"layout\": \"vertical-C\",\n\t\"voteDateTime\": \"2020-12-31 10:05:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Rabbit 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "bd89c163-c4ec-42fe-a093-afe5b7596935",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"rabbit-C\",\n\t\"layout\": \"horizontal-C\",\n\t\"voteDateTime\": \"2020-12-31 10:40:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Tigger 2",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ae9cfe17-4561-49a4-9b5a-7885ca6e8d49",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-C\",\n\t\"color\": \"yellow-C\",\n\t\"voteDateTime\": \"2020-12-31 11:20:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Web Design Vote - Stream To Table",
+			"item": [
+				{
+					"name": "Color Vote - Piglet 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b45d3769-2f27-4fbf-9727-38c61902e1a6",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-D\",\n\t\"color\": \"pink-D\",\n\t\"voteDateTime\": \"2020-12-31 08:05:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Eeyore 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "8d1dbe65-0a79-4f47-a569-b3e61da6c965",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"eeyore-D\",\n\t\"color\": \"yellow-D\",\n\t\"voteDateTime\": \"2020-12-31 08:25:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Piglet 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4dbbe13a-97cc-4258-96e8-a99903f544e5",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-D\",\n\t\"layout\": \"vertical-D\",\n\t\"voteDateTime\": \"2020-12-31 08:40:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Pooh 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "cc8f6efd-6dfa-428f-9b6b-0a3a538a9113",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"pooh-D\",\n\t\"color\": \"yellow-D\",\n\t\"voteDateTime\": \"2020-12-31 09:15:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Tigger 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b4fee782-aec4-4f40-830a-17eddd736811",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-D\",\n\t\"layout\": \"vertical-D\",\n\t\"voteDateTime\": \"2020-12-31 09:30:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Piglet 2",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "18e67122-649e-4eb6-ac48-e9e403c1bb26",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"piglet-D\",\n\t\"layout\": \"horizontal-D\",\n\t\"voteDateTime\": \"2020-12-31 09:50:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Tigger 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "6940b6f6-ec7c-4cb6-a35c-4f3845b896a7",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-D\",\n\t\"color\": \"pink-D\",\n\t\"voteDateTime\": \"2020-12-31 10:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Pooh 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "418fa335-ee99-412c-90a0-23e1ec630cc3",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"pooh-D\",\n\t\"layout\": \"vertical-D\",\n\t\"voteDateTime\": \"2020-12-31 10:05:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Layout Vote - Rabbit 1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "b62bf9ea-e150-47d1-a632-6f61951bb714",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"rabbit-D\",\n\t\"layout\": \"horizontal-D\",\n\t\"voteDateTime\": \"2020-12-31 10:40:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/layout/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"layout",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Color Vote - Tigger 2",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "7efe24c6-2776-482f-be71-167135312a3d",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tigger-D\",\n\t\"color\": \"yellow-D\",\n\t\"voteDateTime\": \"2020-12-31 11:20:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/web/color/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"web",
+								"color",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Premium Offer - Inner Join Stream / Table",
+			"item": [
+				{
+					"name": "01a - Bruce Level is Bronze",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-X\",\r\n    \"level\": \"Bronze\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "01b - Clark Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-X\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Bruce Purchase #21",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-X\",\r\n    \"purchaseNumber\": \"21\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Clark Purchase #31",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-X\",\r\n    \"purchaseNumber\": \"31\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Bruce Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-X\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Bruce Purchase #22",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-X\",\r\n    \"purchaseNumber\": \"22\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Alfred Purchase #11",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Alfred-X\",\r\n    \"purchaseNumber\": \"11\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "07 - Clark Level is Silver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-X\",\r\n    \"level\": \"Silver\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "08 - Clark Purchase #32",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-X\",\r\n    \"purchaseNumber\": \"32\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "09 - Bruce Purchase #23",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-X\",\r\n    \"purchaseNumber\": \"23\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "10 - Bruce Level is Silver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-X\",\r\n    \"level\": \"Silver\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "11 - Bruce Purchase #24",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-X\",\r\n    \"purchaseNumber\": \"24\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "12 - Clark Purchase #33",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-X\",\r\n    \"purchaseNumber\": \"33\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13a - Aflred Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Alfred-X\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13b - Clark Level is Diamond",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-X\",\r\n    \"level\": \"Diamond\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "14 - Clark Purchase #34",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-X\",\r\n    \"purchaseNumber\": \"34\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Premium Offer - Left Join Stream / Table",
+			"item": [
+				{
+					"name": "01a - Bruce Level is Bronze",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Y\",\r\n    \"level\": \"Bronze\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "01b - Clark Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Y\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Bruce Purchase #21",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Y\",\r\n    \"purchaseNumber\": \"21\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Clark Purchase #31",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Y\",\r\n    \"purchaseNumber\": \"31\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Bruce Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Y\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Bruce Purchase #22",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Y\",\r\n    \"purchaseNumber\": \"22\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Alfred Purchase #11",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Alfred-Y\",\r\n    \"purchaseNumber\": \"11\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "07 - Clark Level is Silver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Y\",\r\n    \"level\": \"Silver\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "08 - Clark Purchase #32",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Y\",\r\n    \"purchaseNumber\": \"32\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "09 - Bruce Purchase #23",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Y\",\r\n    \"purchaseNumber\": \"23\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "10 - Bruce Level is Silver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Y\",\r\n    \"level\": \"Silver\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "11 - Bruce Purchase #24",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Y\",\r\n    \"purchaseNumber\": \"24\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "12 - Clark Purchase #33",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Y\",\r\n    \"purchaseNumber\": \"33\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13b - Alfred Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Alfred-Y\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13b - Clark Level is Diamond",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Y\",\r\n    \"level\": \"Diamond\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "14 - Clark Purchase #34",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Y\",\r\n    \"purchaseNumber\": \"34\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Premium Offer - Inner Join Stream / Global Table",
+			"item": [
+				{
+					"name": "01a - Bruce Level is Bronze",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-X\",\r\n    \"level\": \"Bronze\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "01b - Clark Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-X\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Bruce Purchase #21",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-X\",\r\n    \"purchaseNumber\": \"21\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Clark Purchase #31",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-X\",\r\n    \"purchaseNumber\": \"31\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Bruce Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-X\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Bruce Purchase #22",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-X\",\r\n    \"purchaseNumber\": \"22\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Alfred Purchase #11",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Alfred-Global-X\",\r\n    \"purchaseNumber\": \"11\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "07 - Clark Level is Silver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-X\",\r\n    \"level\": \"Silver\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "08 - Clark Purchase #32",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-X\",\r\n    \"purchaseNumber\": \"32\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "09 - Bruce Purchase #23",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-X\",\r\n    \"purchaseNumber\": \"23\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "10 - Bruce Level is Silver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-X\",\r\n    \"level\": \"Silver\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "11 - Bruce Purchase #24",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-X\",\r\n    \"purchaseNumber\": \"24\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "12 - Clark Purchase #33",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-X\",\r\n    \"purchaseNumber\": \"33\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13a - Alfred Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Alfred-Global-X\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13b - Clark Level is Diamond",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-X\",\r\n    \"level\": \"Diamond\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "14 - Clark Purchase #34",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-X\",\r\n    \"purchaseNumber\": \"34\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Premium Offer - Inner Join Stream / Global Table Copy",
+			"item": [
+				{
+					"name": "01a - Bruce Level is Bronze",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-XC\",\r\n    \"level\": \"Bronze\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "01b - Clark Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-XC\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Bruce Purchase #21",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-XC\",\r\n    \"purchaseNumber\": \"21\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Clark Purchase #31",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-XC\",\r\n    \"purchaseNumber\": \"31\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Bruce Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-XC\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Bruce Purchase #22",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-XC\",\r\n    \"purchaseNumber\": \"22\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Alfred Purchase #11",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Alfred-Global-XC\",\r\n    \"purchaseNumber\": \"11\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "07 - Clark Level is Silver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-XC\",\r\n    \"level\": \"Silver\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "08 - Clark Purchase #32",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-XC\",\r\n    \"purchaseNumber\": \"32\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "09 - Bruce Purchase #23",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-XC\",\r\n    \"purchaseNumber\": \"23\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "10 - Bruce Level is Silver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-XC\",\r\n    \"level\": \"Silver\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "11 - Bruce Purchase #24",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Bruce-Global-XC\",\r\n    \"purchaseNumber\": \"24\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "12 - Clark Purchase #33",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-XC\",\r\n    \"purchaseNumber\": \"33\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13a - Alfred Level is Gold",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Alfred-Global-XC\",\r\n    \"level\": \"Gold\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13b - Clark Level is Diamond",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-XC\",\r\n    \"level\": \"Diamond\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "14 - Clark Purchase #34",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Clark-Global-XC\",\r\n    \"purchaseNumber\": \"34\",\r\n    \"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/premium/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"premium",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Subscription Offer - Diana Case 1",
+			"item": [
+				{
+					"name": "01 - Diana Subscribe Monthly",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-D\",\r\n    \"duration\": \"Monthly\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Diana Subscription #41",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-D\",\r\n    \"subscriptionNumber\": \"41\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Diana Subscription #42",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-D\",\r\n    \"subscriptionNumber\": \"42\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Diana Subscription #43",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-D\",\r\n    \"subscriptionNumber\": \"43\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Diana Subscribe Yearly",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-D\",\r\n    \"duration\": \"Yearly\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Diana Subscription #44",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-D\",\r\n    \"subscriptionNumber\": \"44\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "07 - Diana Subscription #45",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-D\",\r\n    \"subscriptionNumber\": \"45\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Subscription Offer - Diana Case 2",
+			"item": [
+				{
+					"name": "01 - Diana Subscribe Monthly",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-E\",\r\n    \"duration\": \"Monthly\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Diana Subscription #41",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-E\",\r\n    \"subscriptionNumber\": \"41\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Diana Subscription #42",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-E\",\r\n    \"subscriptionNumber\": \"42\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Diana Subscription #43",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-E\",\r\n    \"subscriptionNumber\": \"43\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Diana Subscribe Yearly",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-E\",\r\n    \"duration\": \"Yearly\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "06 - Diana Subscription #44",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-E\",\r\n    \"subscriptionNumber\": \"44\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "07 - Diana Subscription #45",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Diana-E\",\r\n    \"subscriptionNumber\": \"45\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9001/api/subscription/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9001",
+							"path": [
+								"api",
+								"subscription",
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Order 1 Random Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderLocation\": \"{{$randomCountry}}\",\r\n  \"creditCardNumber\": \"{{$randomBankAccount}}{{$randomBankAccount}}\",\r\n  \"items\": [\r\n    {\r\n      \"itemName\": \"{{$randomProductMaterial}} {{$randomProduct}}\",\r\n      \"price\": {{$randomInt}},\r\n      \"quantity\": {{$randomInt}}\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order 2 Random Items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderLocation\": \"{{$randomCountry}}\",\r\n  \"creditCardNumber\": \"{{$randomBankAccount}}{{$randomBankAccount}}\",\r\n  \"items\": [\r\n    {\r\n      \"itemName\": \"{{$randomProductMaterial}} {{$randomProduct}}\",\r\n      \"price\": {{$randomInt}},\r\n      \"quantity\": {{$randomInt}}\r\n    },\r\n    {\r\n      \"itemName\": \"{{$randomProductMaterial}} {{$randomProduct}}\",\r\n      \"price\": {{$randomInt}},\r\n      \"quantity\": {{$randomInt}}\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order 3 Random Items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderLocation\": \"{{$randomCountry}}\",\r\n  \"creditCardNumber\": \"{{$randomBankAccount}}{{$randomBankAccount}}\",\r\n  \"items\": [\r\n    {\r\n      \"itemName\": \"{{$randomProductMaterial}} {{$randomProduct}}\",\r\n      \"price\": {{$randomInt}},\r\n      \"quantity\": {{$randomInt}}\r\n    },\r\n    {\r\n      \"itemName\": \"{{$randomProductMaterial}} {{$randomProduct}}\",\r\n      \"price\": {{$randomInt}},\r\n      \"quantity\": {{$randomInt}}\r\n    },    \r\n    {\r\n      \"itemName\": \"{{$randomProductMaterial}} {{$randomProduct}}\",\r\n      \"price\": {{$randomInt}},\r\n      \"quantity\": {{$randomInt}}\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Promotion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"promotionCode\" : \"{{$randomWord}}{{$randomInt}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/promotion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"promotion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Discount",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5367c050-152d-4a0e-a75e-9483c609c18b",
+						"exec": [
+							"pm.environment.set(\"randomDiscountPercentage\", _.random(1, 10) * 5)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"discountCode\": \"{{$randomColor}}{{$randomInt}}\",\n    \"discountPercentage\": {{randomDiscountPercentage}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/discount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"discount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Plastic & Non Plastic Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderLocation\": \"{{$randomCountry}}\",\n    \"creditCardNumber\": \"{{$randomBankAccount}}{{$randomBankAccount}}\",\n    \"items\": [\n        {\n            \"itemName\": \"Cotton Dog\",\n            \"price\": 80,\n            \"quantity\": 250\n        },\n        {\n            \"itemName\": \"Plastic Cat\",\n            \"price\": 400,\n            \"quantity\": 500\n        },\n        {\n            \"itemName\": \"Wooden Horse\",\n            \"price\": 700,\n            \"quantity\": 90\n        },\n        {\n            \"itemName\": \"Steel Pig\",\n            \"price\": 350,\n            \"quantity\": 270\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Good Feedback",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "25e42f93-b0ab-4837-9fea-e53d3b4ec124",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"location\" : \"{{$randomCountry}}\",\n   \"rating\" : 5,\n   \"feedback\" : \"I'm very happy with the staff. Helpful and always smile. Please keep make me feels good.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/feedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bad Feedback",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "14de024d-d144-46de-8e34-bce50e7323b5",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"location\" : \"{{$randomCountry}}\",\n   \"rating\" : 1,\n   \"feedback\" : \"The staff treats me bad and make me angry! It's really bad experience!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/feedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Random Feedback",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4482ca5a-d070-4f76-b753-e4b742c4d2bb",
+						"exec": [
+							"var pronouns = [\"he\", \"she\", \"they\"]",
+							"var randomPronoun = pronouns[_.random(pronouns.length - 1)];",
+							"",
+							"var randomAdjectiveWords = [\"happy\", \"good\", \"helpful\", \"angry\", \"sad\", \"bad\", \"visionary\", \"strategic\", \"viral\", \"rich\", \"innovative\", \"efficient\", \"collaborative\", \"secure\"];",
+							"var randomAdjectiveWord = randomAdjectiveWords[ _.random(randomAdjectiveWords.length - 1)];",
+							"",
+							"pm.environment.set(\"randomAdjectiveWord\", randomAdjectiveWord)",
+							"pm.environment.set(\"randomPronoun\", randomPronoun)",
+							"pm.environment.set(\"randomRating\", _.random(1, 5))"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"location\" : \"{{$randomCountry}}\",\n   \"rating\" : {{randomRating}},\n   \"feedback\" : \"The {{$randomJobType}} at {{$randomDepartment}} department, {{randomPronoun}} makes me feel {{randomAdjectiveWord}} when I try to {{$randomIngverb}} {{$randomNoun}}.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/feedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Flash Sale Vote",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0bfbf3ed-53d5-4166-88ba-31083db3478c",
+						"exec": [
+							"var items = [\"Book\", \"Candy\", \"Jacket\", \"Lamp\"]",
+							"pm.environment.set(\"randomCustomerId\", \"Customer-\" + _.random(101,150))",
+							"pm.environment.set(\"randomItem\", items[_.random(items.length - 1)])",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"customerId\" : \"{{randomCustomerId}}\",\n   \"itemName\" : \"{{randomItem}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/flashsale/vote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"flashsale",
+						"vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Random Flash Sale Vote",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "86f41aee-0e3b-4de5-9604-6487b89993a0",
+						"exec": [
+							"var items = [\"Book\", \"Candy\", \"Jacket\", \"Lamp\"]",
+							"pm.environment.set(\"randomCustomerId\", \"Customer-\" + _.random(101,150))",
+							"pm.environment.set(\"randomItem\", items[_.random(items.length - 1)])",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"customerId\" : \"{{randomCustomerId}}\",\n   \"itemName\" : \"{{randomItem}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/flashsale/vote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"flashsale",
+						"vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inventory - Add",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "17d55838-9dac-455a-b028-7c79970cd841",
+						"exec": [
+							"var transactionDateGenerator = function (rangeOfDays, startHour, hourRange) {\r",
+							"    var seed = new Date(Date.now());\r",
+							"    seed.setDate(seed.getDate() - rangeOfDays)\r",
+							"    return new Date(seed.getYear() + 1900, seed.getMonth(), seed.getDate() + Math.random() * rangeOfDays, Math.random() * hourRange + startHour, Math.random() * 60)\r",
+							"}\r",
+							"\r",
+							"var randomDate = transactionDateGenerator(1, 8, 12)\r",
+							"var year = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(randomDate)\r",
+							"var month = new Intl.DateTimeFormat('en', { month: '2-digit' }).format(randomDate)\r",
+							"var date = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(randomDate)\r",
+							"var hour = (\"0\" + randomDate.getHours()).slice(-2)\r",
+							"var minute = (\"0\" + randomDate.getMinutes()).slice(-2)\r",
+							"var second = (\"0\" + randomDate.getSeconds()).slice(-2)\r",
+							"\r",
+							"var randomDateString = year + \"-\" + month + \"-\" + date + \" \" + hour + \":\" + minute + \":\" + second\r",
+							"\r",
+							"pm.environment.set(\"randomTransactionDate\", randomDateString);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"location\" : \"{{$randomCountry}}\",\r\n\t\"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\",\r\n\t\"quantity\": {{$randomInt}},\r\n\t\"transactionTime\" : \"{{randomTransactionDate}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/inventory/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"inventory",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inventory - Subtract",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "76f1c978-4aa9-413f-8486-2873568a7760",
+						"exec": [
+							"var transactionDateGenerator = function (rangeOfDays, startHour, hourRange) {\r",
+							"    var seed = new Date(Date.now());\r",
+							"    seed.setDate(seed.getDate() - rangeOfDays)\r",
+							"    return new Date(seed.getYear() + 1900, seed.getMonth(), seed.getDate() + Math.random() * rangeOfDays, Math.random() * hourRange + startHour, Math.random() * 60)\r",
+							"}\r",
+							"\r",
+							"var randomDate = transactionDateGenerator(1, 8, 12)\r",
+							"var year = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(randomDate)\r",
+							"var month = new Intl.DateTimeFormat('en', { month: '2-digit' }).format(randomDate)\r",
+							"var date = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(randomDate)\r",
+							"var hour = (\"0\" + randomDate.getHours()).slice(-2)\r",
+							"var minute = (\"0\" + randomDate.getMinutes()).slice(-2)\r",
+							"var second = (\"0\" + randomDate.getSeconds()).slice(-2)\r",
+							"\r",
+							"var randomDateString = year + \"-\" + month + \"-\" + date + \" \" + hour + \":\" + minute + \":\" + second\r",
+							"\r",
+							"pm.environment.set(\"randomTransactionDate\", randomDateString);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"location\" : \"{{$randomCountry}}\",\r\n\t\"item\": \"{{$randomProductMaterial}} {{$randomProduct}}\",\r\n\t\"quantity\": {{$randomInt}},\r\n\t\"transactionTime\" : \"{{randomTransactionDate}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/inventory/subtract",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"inventory",
+						"subtract"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Onlne Order",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c8f4378a-0d2b-4d6e-acb6-1f5aaa757b75",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"onlineOrderNumber\": \"ORD-1\",\n\t\"orderDateTime\" : \"2020-12-31 14:45:00\",\n\t\"totalAmount\" : {{$randomInt}},\n\t\"username\" : \"{{$randomUserName}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/order/online",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"order",
+						"online"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Onlne Payment",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8ee26303-6d50-42ac-8977-5e28f756f5bd",
+						"exec": [
+							"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+							"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"onlineOrderNumber\": \"ORD-1\",\n\t\"paymentDateTime\" : \"2020-12-31 15:00:00\",\n\t\"paymentMethod\" : \"{{randomPaymentMethod}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/payment/online",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"payment",
+						"online"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Web Color Vote",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0438c3e0-5f0e-4a43-bf15-420718e8ab10",
+						"exec": [
+							"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+							"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"peter.parker\",\n\t\"color\" : \"red\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/web/color/vote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"web",
+						"color",
+						"vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Web Layout Vote",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "11a0ad4d-401b-4617-b333-8ec8a34ecfe3",
+						"exec": [
+							"var paymentMethods = [\"visa\", \"mastercard\", \"paypal\", \"bank-transfer\", \"gift-voucher\"]\r",
+							"pm.environment.set(\"randomPaymentMethod\", paymentMethods[_.random(paymentMethods.length - 1)])\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"peter.parker\",\n\t\"layout\" : \"vertical\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9001/api/web/layout/vote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"web",
+						"layout",
+						"vote"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "dc143cec-1568-4dea-b7c7-da6d1a2191c4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9449c617-63b8-4179-baad-8afcb537ffd7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "1f22693e-f437-4470-86b9-806e8080a9ae",
+			"key": "inventorySimulationItem",
+			"value": "Apple"
+		},
+		{
+			"id": "4a2a62fd-1c73-4ac9-b5ee-df0352d539e0",
+			"key": "identifier",
+			"value": "1"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
