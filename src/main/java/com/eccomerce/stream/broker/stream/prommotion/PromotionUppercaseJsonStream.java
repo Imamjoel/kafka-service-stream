@@ -4,6 +4,7 @@ package com.eccomerce.stream.broker.stream.prommotion;
 import com.eccomerce.stream.broker.message.PromotionMessage;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.kstream.Consumed;
@@ -44,6 +45,6 @@ public class PromotionUppercaseJsonStream {
         } catch (JsonProcessingException e) {
             LOG.warn("Can't proccess meesage {}", message);
         }
-        return "";
+        return StringUtils.EMPTY;
     }
 }
