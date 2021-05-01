@@ -4,6 +4,7 @@ import com.eccomerce.stream.broker.message.OrderMessage;
 import com.eccomerce.stream.broker.message.OrderPatternMessage;
 import com.eccomerce.stream.broker.message.OrderRewardMessage;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.kafka.streams.KeyValue;
 import org.apache.kafka.streams.kstream.KeyValueMapper;
 import org.apache.kafka.streams.kstream.Named;
 import org.apache.kafka.streams.kstream.Predicate;
@@ -63,5 +64,9 @@ public class CommodityStreamUtil {
 
     public static Predicate<? super String, ? super OrderPatternMessage> isPlastic() {
         return ((key, value) -> StringUtils.startsWithIgnoreCase(value.getItemName(), "plastic"));
+    }
+
+    public static KeyValueMapper<String, OrderMessage, KeyValue<String, OrderRewardMessage>> mapToOrderRewardChangeKey() {
+        return (key, value) -> KeyValue.pair(value.getOrderLocation(), mapToOrderReward(value));
     }
 }
